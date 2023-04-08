@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+a,button{
+	cursor: pointer;
+}
+@keyframes pan{
+	100%{ background-position:15% 50%; }
+}
+body{
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0 24px;
+	background-image: url("C:/Users/selvi perumal/OneDrive/Pictures/Pic/image1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: pan 6s infinite alternate linear;
+}
+@media (width>=500px){
+	body{
+		padding: 0;
+	}
+}
+
+.login{
+	width: 100%;
+	padding: 70px 30px 44px;
+	border-radius: 24px;
+	background: #ffffff;
+	text-align: center;
+
+}
+@media(width>=500px){
+	.login{
+		margin: 0;
+		width: 400px;
+	}
+}
+.login>h2{
+	margin: 0;
+	font-size: 36px;
+	font-weight: 600px;
+}
+.login>h3{
+	margin: 0 0 30px;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 0px;
+	color: rgba(0, 0, 0, .56);
+}
+.form{
+	width: 100%;  /* username and password like form  */
+	margin: 0;
+	display: grid;
+	gap: 16px;
+}
+.form>a{color: #216ce7} /* forgot password */
+.form>input,
+.form>button {
+	width: 100%;
+	height: 50px; 
+	padding: 0 13px;
+	border-radius: 25px;/*circle*/
+}
+.form>input{
+	border: 2px solid #545aa7 ;
+}
+.form>button{
+	width: 100%;
+	height: 56px;
+	border:0;
+	background:#4682b4  ;
+	color: #f9f9f9;
+	font-weight: 600;
+}
